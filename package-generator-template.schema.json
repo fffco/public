@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Template",
+    "definitions": {
+        "Template": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "$schema": {
+                    "type": "string"
+                },
+                "path": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "packagesPath": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "vsCodePrefix": {
+                    "type": "string"
+                },
+                "copyIgnore": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "fillIgnore": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "additionalQuestions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AdditionalQuestion"
+                    }
+                }
+            },
+            "required": ["$schema", "description", "name", "packagesPath", "vsCodePrefix"],
+            "title": "Template"
+        },
+        "AdditionalQuestion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "default": {
+                    "type": "string"
+                }
+            },
+            "required": ["message", "name"],
+            "title": "AdditionalQuestion"
+        }
+    }
+}
