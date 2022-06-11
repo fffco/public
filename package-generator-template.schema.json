@@ -9,9 +9,6 @@
                 "$schema": {
                     "type": "string"
                 },
-                "path": {
-                    "type": "string"
-                },
                 "defaultPackageName": {
                     "type": "string"
                 },
