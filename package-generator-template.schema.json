@@ -12,6 +12,9 @@
                 "path": {
                     "type": "string"
                 },
+                "defaultPackageName": {
+                    "type": "string"
+                },
                 "name": {
                     "type": "string"
                 },
