@@ -43,7 +43,7 @@
                     }
                 }
             },
-            "required": ["$schema", "description", "name", "packagesPath", "vsCodePrefix"],
+            "required": ["$schema", "description", "name", "packagesPath", "vsCodePrefix", "defaultPackageName"],
             "title": "Template"
         },
         "AdditionalQuestion": {
